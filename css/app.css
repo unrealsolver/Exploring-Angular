@@ -1,0 +1,48 @@
+* {
+	font-family: VT323;
+	font-size: 30px;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
+	list-style: square;
+	color: #287775;
+	/*text-shadow: 0px 0px 2px #2AF;*/
+}
+
+hr {
+	margin-top: 30px;
+	height: 3px;
+	background-color: #AEF;
+	color: #888;
+}
+
+#search {
+	font-weight: 800;
+}
+
+input	 {
+	border: 3px inset #AEF;
+	border-radius: 0;
+	height: 24px;
+	background: #DFF;
+}
+
+input:focus {
+	border: 2px solid #8BC;
+	box-shadow: 0 0 2px #8BC;
+}
+
+#panel {
+	/*background: #CEF;*/
+	padding: 20px;
+	margin: 0 auto;
+	width: 400px;
+	border: 2px outset #AEF;
+	background: #d7e7ef; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #d7e7ef 0%, #a0e0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#d7e7ef), color-stop(100%,#a0e0f0)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #d7e7ef 0%,#a0e0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #d7e7ef 0%,#a0e0f0 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #d7e7ef 0%,#a0e0f0 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #d7e7ef 0%,#a0e0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e7ef', endColorstr='#a0e0f0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+}
