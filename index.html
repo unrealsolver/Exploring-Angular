@@ -6,25 +6,15 @@
 	<!-- Enabling JS 1.8 -->
 	<script type="application/javascript;version=1.8"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>
+  
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/myAppCtrl.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/app.css"></link>
 	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 </head>
 
-<body ng-controller="MyAppCtrl">
-	<div id="panel">
-		<div id="search">
-			Search: 
-			<input ng-model="query">
-		</div>
-		<hr></hr>
-		<ul>
-			<li ng-repeat="item in items | filter:query">
-				{{item.name}}
-				<p>{{item.value}}</p>
-			</li>
-		</ul>
-	</div>
+<body>
+  <div ng-view></div>
 </body>
 </html>

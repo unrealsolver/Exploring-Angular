@@ -1,7 +1,9 @@
-var myApp = angular.module('myApp', []);
+var myAppControllers = angular.module('myAppControllers', []);
 
-myApp.controller('MyAppCtrl', ['$scope', '$http',
+myAppControllers.controller('MyAppMainCtrl', ['$scope', '$http',
 	function ($scope, $http) {
 		$http.get('stubs/stubs.json')
 			.success( function (data) $scope.items = data );
 }]);
+
+console.log('MyAppControllers', 'load');

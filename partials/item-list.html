@@ -1,0 +1,13 @@
+<div id="panel">
+  <div id="search">
+    Search: 
+    <input ng-model="query"></input>
+  </div>
+  <hr></hr>
+  <ul>
+    <li ng-repeat="item in items | filter:query">
+      {{item.name}}
+      <p>{{item.value}}</p>
+    </li>
+  </ul>
+</div>
