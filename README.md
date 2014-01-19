@@ -1,7 +1,15 @@
 ## How to run ##
 
-$ npm -g install static-server
+To install all needed stuff use:
 
-$ static-server . 3000
+``$ npm -g install static-server coffee-script``
+
+Compiling .coffee:
+
+``$ coffee -c ./js/``
+
+Running static-server on 3000 port:
+
+``$ static-server . 3000``
 
 Now you can open http://127.0.0.1:3000 in your browser.
